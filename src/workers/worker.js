@@ -37,7 +37,7 @@ async function deployProgram(program) {
   keyProvider.useCache(true);
 
   // Create a record provider that will be used to find records and transaction data for Aleo programs
-  const networkClient = new AleoNetworkClient("https://vm.aleo.org/api");
+  const networkClient = new AleoNetworkClient("https://explorer.api.aleo.org/v1");
 
   // Use existing account with funds
   const account = new Account({
